@@ -1,0 +1,9 @@
+.vscode
+node_modules
+.DS_Store
+
+.env
+ssh
+login.xml
+login.xml.cms
+

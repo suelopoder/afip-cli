@@ -1,0 +1,16 @@
+{
+  "name": "afip-cli",
+  "version": "1.0.0",
+  "description": "AFIP CLI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Diego Sisto",
+  "license": "ISC",
+  "dependencies": {
+    "@xmldom/xmldom": "^0.8.6",
+    "dotenv": "^16.0.3",
+    "soap": "^1.0.0"
+  }
+}
