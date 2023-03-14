@@ -17,12 +17,12 @@ Tenemos que generar uno por cada empresa/persona que vamos a buscar en AFIP.
 Esto genera una clave privada y un CSR, o sea, un pedido de certificado para afip
 
 2. Subir el CSR a AFIP y descargar certificado
-Seguir este documento https://www.afip.gob.ar/ws/WSAA/wsaa_obtener_certificado_produccion.pdf para subir el CSR a AFIP.
+Seguir [este documento](https://www.afip.gob.ar/ws/WSAA/wsaa_obtener_certificado_produccion.pdf) para subir el CSR a AFIP.
 Luego buscar el certificado bajo el alias y bajarlo.
 Ubicarlo en la carpeta `ssh` y renombrarlo a `ssh/afip.pem`
 
 3. Vincular en AFIP nuestro certificado a servicio de factura electrónica
-Seguir este documento https://www.afip.gob.ar/ws/WSAA/ADMINREL.DelegarWS.pdf para permitir a nuestro certificado usar el servicio de factura electrónica
+Seguir [este documento](https://www.afip.gob.ar/ws/WSAA/ADMINREL.DelegarWS.pdf) para permitir a nuestro certificado usar el servicio de factura electrónica
 
 ### Generar ticket de acceso
 
