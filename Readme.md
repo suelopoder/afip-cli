@@ -1,4 +1,4 @@
-# AFIP cli
+# AFIP CLI
 
 Un set de herramientas para comunicarse con AFIP por línea de comando
 
@@ -41,16 +41,19 @@ bash, openssl, node 18
 
 ## Vocabulario
 
-alias o nombre
-certificado
-web service
-WSAA
+- certificado: Es un archivo que usamos para identificarnos con AFIP
+- alias o nombre: Nombre que se le da al "computador fiscal". Es el nombre del certificado en AFIP.
+- web service o WS: AFIP provee varios servicios, los que se pueden invicar a travez de internet son "web services". Ejemplos de servicio son: factura electrónica (wsfe), seguros de caución (wsseg), bonos fiscales electrónicos (wsbfev1), etc.
+- WSAA: Es el web service de AFIP único para autenticarse, es necesario usarlo antes de invocar otro WS.
 
 ## Docs
 
-* Doc técnica de generación de certificados https://www.afip.gob.ar/ws/WSAA/WSAA.ObtenerCertificado.pdf
-* Docs de Auth en AFIP https://www.afip.gob.ar/ws/documentacion/wsaa.asp
-* Docs de web service de factura electrónica https://www.afip.gob.ar/ws/documentacion/ws-factura-electronica.asp
-* Doc técnica de servicio de factura electrónica https://www.afip.gob.ar/fe/ayuda/documentos/wsfev1-COMPG.pdf
-* WSDL de servicio de factura electrónica https://servicios1.afip.gov.ar/wsfev1/service.asmx?WSDL
+* [Doc técnica de generación de certificados](https://www.afip.gob.ar/ws/WSAA/WSAA.ObtenerCertificado.pdf)
+* [Docs de Auth en AFIP](https://www.afip.gob.ar/ws/documentacion/wsaa.asp)
+* [Docs de web service de factura electrónica](https://www.afip.gob.ar/ws/documentacion/ws-factura-electronica.asp)
+* [Doc técnica de servicio de factura electrónica](https://www.afip.gob.ar/fe/ayuda/documentos/wsfev1-COMPG.pdf)
+* [WSDL de servicio de factura electrónica](https://servicios1.afip.gov.ar/wsfev1/service.asmx?WSDL)
 
+## Agradecimientos
+
+Gracias a @sarriaroman por https://github.com/sarriaroman/AFIP-API que llegó mucho antes que yo y me ayudó mucho a pasar los pasos de la autenticación y generación de ticket.
